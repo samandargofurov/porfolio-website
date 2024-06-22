@@ -565,6 +565,40 @@ section {
     margin-top: 10px;
 }
 
+.scrollToTop-btn {
+    z-index: 999;
+    position: fixed;
+    color: #fff;
+    background: crimson;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.scrollToTop-btn.active {
+    right: 20px;
+    opacity: 1;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
 
@@ -614,8 +648,8 @@ section {
 
     .menu-btn {
         position: absolute;
-        background: url(./images/bg.png) no-repeat;
-        background-size: 30px;
+        background: url(./images/360_F_225221877_9x7repcZzz4ryhvZ4Z5DmlnnCTdTUImT-fotor-bg-remover-20240622151743.png) no-repeat;
+        background-size: 40px;
         background-position: center;
         width: 40px;
         height: 40px;
@@ -627,7 +661,7 @@ section {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(./images/image1.png) no-repeat;
+        background: url(./images/kisspng-basic-ui-set-icon-close-icon-5d407609d32f25.887664551564505609865-fotor-bg-remover-20240622151929.png) no-repeat;
         background-size: 25px;
         background-position: center;
         transition: .4s ease;
