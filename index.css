@@ -156,11 +156,18 @@ section {
     color: #000;
 }
 
-.media-icons a {
-    color: #fff;
-    font-size: 25px;
+.media-icons a:nth-child(2) {
+    color: red;
+    font-size: 35px;
     margin-right: 30px;
 }
+
+.media-icons a:nth-child(odd) {
+    color: rgba(0, 70, 199, 0.859);
+    font-size: 35px;
+    margin-right: 30px;
+}
+
 
 /* section about */
 
